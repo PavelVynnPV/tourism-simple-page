@@ -1,0 +1,196 @@
+.about_hotel {
+  width: 1200px;
+  margin: 0 auto 150px;
+}
+.about__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.about__list_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  width: 100%;
+  justify-content: flex-end;
+}
+.about__info_block {
+  display: flex;
+  gap: 40px;
+  justify-content: flex-end;
+  align-self: flex-end;
+  max-width: 800px;
+}
+
+.about__title_info {
+  font-size: 30px;
+  font-weight: 300;
+  max-width: 770px;
+  margin-bottom: 150px;
+  opacity: 0;
+}
+.about__info_text {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.about__details_link {
+  display: flex;
+  margin-top: 50px;
+  color: #000;
+  align-items: center;
+  gap: 15px;
+}
+.about__icon_arrow {
+  width: 20px;
+  height: 20px;
+  border: 2px solid orange;
+  border-radius: 50%;
+  display: flex;
+}
+.about__icon_arrow::after {
+  content: "➤";
+  color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  margin: 0 0 1.5px 1.5px;
+}
+
+/* hotelsInfoSection */
+
+.hotels_info_section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-end !important;
+  padding: 0 50px;
+}
+.hotel__info {
+  max-width: 1200px;
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 170px;
+}
+.hotel__info.reverse {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 170px;
+  align-self: flex-start;
+}
+
+.hotel__text {
+  max-width: 600px;
+  background-color: rgba(128, 128, 128, 0.082);
+  align-items: center;
+  text-align: left;
+  padding: 50px 80px;
+  margin-top: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); /* Горизонтальний, вертикальний, радіус розсіювання тіні та колір тіні */
+  opacity: 0;
+}
+.hotel__image {
+  background-image: url(../images/slider1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: calc(1200px - 670px);
+  height: 300px;
+  opacity: 0;
+}
+.hotel__info.reverse .hotel__image {
+  background-image: url(../images/slider4.jpg);
+  min-height: 400px;
+}
+.hotel__under_title_text {
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+}
+.hotel__text .about__details_link {
+  font-weight: 500;
+  font-size: 12px;
+}
+.hotel__title {
+  font-size: 10px;
+  letter-spacing: 3.5px;
+}
+
+/* ////SPEC OFfERS */
+
+.spec_offers {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.offers__content {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: auto;
+}
+.offer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 400px;
+  height: 600px;
+  box-shadow: 1px 10px 17px 8px rgba(0, 0, 0, 0.2); /* Горизонтальний, вертикальний, радіус розсіювання тіні та колір тіні */
+  position: relative;
+}
+.offer:hover::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #00000085;
+  width: 100%;
+  height: 100%;
+}
+.offer:hover .offer__title,
+.about__icon_arrow {
+  color: #fff !important;
+  z-index: 1;
+}
+.offer:hover .about__icon_arrow {
+  background-color: orange !important;
+}
+.offer:hover .about__icon_arrow::after {
+  color: #fff;
+}
+.offer:nth-child(2) .offer__img {
+  background-image: url(../images/2.jpg);
+}
+.offer:nth-child(3) .offer__img {
+  background-image: url(../images/3.jpg);
+}
+.offer__img {
+  background-image: url(../images/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.offer__title,
+.offer .about__icon_arrow {
+  margin: 0 0 20px 20px;
+}
+.offer__title {
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+}
+.offer .about__icon_arrow {
+  width: 40px;
+  height: 50px;
+}
+.offer .about__icon_arrow::after {
+  font-size: 23px;
+  margin: 0 0 2.5px 8.5px;
+}
