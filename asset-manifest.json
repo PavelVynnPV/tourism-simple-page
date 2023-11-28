@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/tourism-simple-page/static/css/main.8bba7d04.css",
+    "main.js": "/tourism-simple-page/static/js/main.15a71938.js",
+    "static/media/slider4.jpg": "/tourism-simple-page/static/media/slider4.2223b823fe80fb76b92f.jpg",
+    "static/media/banner.jpg": "/tourism-simple-page/static/media/banner.d6064d7e03e51d7f0424.jpg",
+    "static/media/2.jpg": "/tourism-simple-page/static/media/2.d77ecb0d0c16c1593ba7.jpg",
+    "static/media/1.jpg": "/tourism-simple-page/static/media/1.b9e0fd28c6b3ec3ad54c.jpg",
+    "static/media/slider1.jpg": "/tourism-simple-page/static/media/slider1.936c3c010bcd17d74f17.jpg",
+    "static/media/3.jpg": "/tourism-simple-page/static/media/3.fb72ed0869547601f607.jpg",
+    "static/media/logo.png": "/tourism-simple-page/static/media/logo.a73ca9474cbfe6b3abdd.png",
+    "static/media/preloader.gif": "/tourism-simple-page/static/media/preloader.9dec64084b0539d9a1cb.gif",
+    "index.html": "/tourism-simple-page/index.html",
+    "main.8bba7d04.css.map": "/tourism-simple-page/static/css/main.8bba7d04.css.map",
+    "main.15a71938.js.map": "/tourism-simple-page/static/js/main.15a71938.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8bba7d04.css",
+    "static/js/main.15a71938.js"
+  ]
+}
