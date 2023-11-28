@@ -11,7 +11,7 @@ class AppRoutes extends PureComponent {
             <Router>
                 <Navbar/>
                 <Routes>
-                    <Route exact path="/" element={<MainPage/>}/>
+                    <Route exact path="/tourism-simple-page" element={<MainPage/>}/>
                 </Routes>
                 <Footer/>
             </Router>
