@@ -133,7 +133,6 @@
   align-items: center;
   gap: 50px;
   margin: auto;
-  flex-wrap: wrap;
 }
 .offer {
   display: flex;
@@ -197,7 +196,11 @@
   margin: 0 0 2.5px 8.5px;
 }
 
-
+@media (max-width: 1150px) {
+  .offers__content {
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 1000px) {
   .hotel__info, .hotel__info.reverse {
     display: flex;
