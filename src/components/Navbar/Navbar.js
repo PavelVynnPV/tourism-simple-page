@@ -1,4 +1,4 @@
-import React, { PureComponent, useState } from "react";
+import React, { PureComponent } from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 
@@ -11,15 +11,20 @@ class Navbar extends PureComponent {
     this.header_info_banner = React.createRef();
     this.state = {
       languageChangerValue: "en",
+      activeMenu: false,
     };
   }
 
   componentDidMount() {
     this.gsapBannerAnimation();
-    this.handleLanguageOptionChanger()
   }
 
-  handleLanguageOptionChanger() {
+  handleToggleBurgerMenu = () => {
+    if (this.state.activeMenu === false) {
+      this.setState({ activeMenu: true });
+    } else {
+      this.setState({ activeMenu: false });
+    }
   }
 
   handleLanguageChange = (e) => {
@@ -50,13 +55,13 @@ class Navbar extends PureComponent {
 
   render() {
     const { languageChangerValue } = this.state;
-    console.log(languageChangerValue)
-     return (
+    console.log(languageChangerValue);
+    return (
       <>
         <header>
           <nav>
             <Link to="/" class="logo"></Link>
-            <div class="nav_list_container">
+            <div class={this.state.activeMenu ? "nav_list_container" : "nav_list_unActive"}>
               <ul class="nav_list">
                 <Link to="/">
                   <li class="list_item">
@@ -84,13 +89,31 @@ class Navbar extends PureComponent {
                   name="select"
                   class="nav_btn_language"
                   value={languageChangerValue}
-                  onChange={this.handleLanguageChange}
+                  aria-readonly
                 >
-                  <option value="en" class={languageChangerValue !== 'ua' ? 'unActive' : 'lng'}>EN</option>
-                  <option value="ua" class={languageChangerValue !== 'en' ? 'unActive' : 'lng'}>UA</option>
+                  <option
+                    value="en"
+                    class={languageChangerValue !== "ua" ? "unActive" : "lng"}
+                  >
+                    EN
+                  </option>
+                  <option
+                    value="ua"
+                    class={languageChangerValue !== "en" ? "unActive" : "lng"}
+                  >
+                    UA
+                  </option>
                 </select>
                 <span class="nav_btn_checkin">ONLINE CHECK-IN</span>
               </div>
+            </div>
+            <div
+              class="burger_menu"
+              onClick={this.handleToggleBurgerMenu}
+            >
+              <span class="burger_item"></span>
+              <span class="burger_item"></span>
+              <span class="burger_item"></span>
             </div>
           </nav>
           <div class="header_banner">

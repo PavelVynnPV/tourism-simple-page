@@ -1,11 +1,12 @@
 .about_hotel {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto 150px;
 }
 .about__content {
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding: 0 10px;
 }
 .about__list_info {
   display: flex;
@@ -132,6 +133,7 @@
   align-items: center;
   gap: 50px;
   margin: auto;
+  flex-wrap: wrap;
 }
 .offer {
   display: flex;
@@ -193,4 +195,30 @@
 .offer .about__icon_arrow::after {
   font-size: 23px;
   margin: 0 0 2.5px 8.5px;
+}
+
+
+@media (max-width: 1000px) {
+  .hotel__info, .hotel__info.reverse {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 650px) {
+  .hotel__image {
+    width: 100%;
+  }
+  .hotel__info, .hotel__info.reverse {
+    transform: none !important;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hotels_info_section {
+    padding: 10px !important;
+  }
+  .spec_offers {
+    padding: 10px;
+  }
 }

@@ -90,7 +90,31 @@ form::after {
     text-transform: uppercase;
     font-size: 13px;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .footer__bottom_links a {
     color: gray !important;
+}
+@media (max-width: 830px) {
+  .footer__container {
+    padding: 100px 20px;
+  }
+  .footer__top {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .connect__social_links {
+    justify-content: center;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  .footer__bottom_links {
+    gap: 10px;
+  }
 }
